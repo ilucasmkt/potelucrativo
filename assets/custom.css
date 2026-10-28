@@ -1,0 +1,26 @@
+/* Seções adicionadas manualmente (investimento x lucro e lista de compras) */
+.ix-section{padding:5rem 1.25rem}
+.ix-wrap{max-width:60rem;margin:0 auto}
+.ix-grid{display:grid;gap:1rem;align-items:stretch;grid-template-columns:1fr}
+.ix-card{background:var(--card);border-radius:1.25rem;box-shadow:var(--shadow-soft);padding:1.75rem 1.5rem;text-align:center}
+.ix-card.ix-hot{background:var(--chocolate);color:var(--chocolate-foreground);outline:4px solid color-mix(in oklab,var(--gold) 60%,transparent)}
+.ix-label{display:block;font-size:.7rem;font-weight:800;letter-spacing:.3em;text-transform:uppercase;color:var(--primary)}
+.ix-hot .ix-label{color:var(--gold)}
+.ix-value{display:block;font-family:var(--font-display);font-weight:800;font-size:2.4rem;line-height:1.1;margin:.6rem 0 .5rem}
+.ix-sub{font-size:.95rem;opacity:.85}
+.ix-arrow{display:flex;align-items:center;justify-content:center;color:var(--primary)}
+.ix-arrow svg{width:2.25rem;height:2.25rem;transform:rotate(90deg)}
+.ix-cta{text-align:center;margin-top:2.5rem}
+.sl-grid{display:grid;gap:.75rem;grid-template-columns:1fr;margin-top:0}
+.sl-item{display:flex;align-items:center;gap:.9rem;background:var(--card);border-radius:1rem;box-shadow:var(--shadow-soft);padding:1rem 1.25rem;font-weight:700}
+.sl-ok{display:flex;height:1.6rem;width:1.6rem;flex:none;align-items:center;justify-content:center;border-radius:9999px;background:var(--primary);color:var(--primary-foreground)}
+.sl-ok svg{width:1rem;height:1rem}
+.sl-total{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.5rem;margin-top:1rem;background:var(--chocolate);color:var(--chocolate-foreground);border-radius:1rem;padding:1.1rem 1.4rem;font-weight:800}
+.sl-total b{font-family:var(--font-display);font-size:1.6rem;color:var(--gold)}
+.sl-note{margin-top:.9rem;text-align:center;font-size:.85rem;opacity:.7}
+@media(min-width:768px){
+ .ix-grid{grid-template-columns:1fr auto 1fr}
+ .ix-arrow svg{transform:none}
+ .ix-value{font-size:3rem}
+ .sl-grid{grid-template-columns:1fr 1fr}
+}
