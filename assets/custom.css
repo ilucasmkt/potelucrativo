@@ -24,3 +24,12 @@
  .ix-value{font-size:3rem}
  .sl-grid{grid-template-columns:1fr 1fr}
 }
+/* Ofertas */
+.of-grid{display:grid;gap:1.25rem;grid-template-columns:1fr;margin-top:1.5rem;text-align:left;align-items:stretch}
+.of-card{position:relative;display:flex;flex-direction:column;background:var(--card);color:var(--card-foreground);border-radius:1.5rem;box-shadow:var(--shadow-soft);padding:2rem 1.5rem}
+.of-premium{outline:4px solid color-mix(in oklab,var(--gold) 70%,transparent);padding-top:2.5rem}
+.of-badge{position:absolute;top:-.9rem;left:50%;transform:translateX(-50%);background:var(--primary);color:var(--primary-foreground);font-size:.7rem;font-weight:800;letter-spacing:.2em;padding:.35rem 1rem;border-radius:9999px;white-space:nowrap}
+.of-name{text-align:center;font-size:.8rem;font-weight:800;letter-spacing:.25em;text-transform:uppercase;color:var(--primary)}
+.of-price{text-align:center;font-family:var(--font-display);font-weight:800;font-size:3.5rem;line-height:1.1;margin:.4rem 0 1.5rem;color:var(--primary)}
+.of-btn{margin-top:auto;padding-top:2rem;text-align:center}
+@media(min-width:768px){.of-grid{grid-template-columns:1fr 1fr}}
