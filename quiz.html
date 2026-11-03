@@ -19,7 +19,7 @@ fbq('track', 'PageView');
 <meta name="description" content="Responda 6 perguntas rápidas e receba um plano de ação personalizado para lucrar de R$80 a R$400 por dia vendendo doce no pote.">
 <meta name="robots" content="noindex">
 <link rel="icon" href="assets/favicon.svg?v=2" type="image/svg+xml"><link rel="icon" href="assets/favicon.ico?v=2" sizes="any"><link rel="apple-touch-icon" href="assets/apple-touch-icon.png?v=2">
-<link rel="stylesheet" href="_ext/fonts.googleapis.com/assets/css2"><link rel="stylesheet" href="assets/quiz.css?v=5">
+<link rel="stylesheet" href="_ext/fonts.googleapis.com/assets/css2"><link rel="stylesheet" href="assets/quiz.css?v=6">
 </head><body>
 <div class="wrap">
 <div class="top"><div class="brand"><b>PROTOCOLO</b><span>Renda Extra</span><i>de Colher</i></div><button class="back" id="back" hidden>← Voltar</button></div>
@@ -87,7 +87,7 @@ lis.forEach(function(x,k){setTimeout(function(){x.classList.add("on")},300+k*650
 setTimeout(function(){L.hidden=true;R.hidden=false;
 var ok=cap_>=potes;
 R.innerHTML='<span class="badge">Boa notícia</span><h2 class="serif" style="text-align:center;font-size:1.6rem;margin-bottom:.5rem">A sua meta de R$ '+BR(meta)+' por mês é <em style="color:var(--red)">possível</em></h2>'+
-'<div class="card"><div class="mrow"><span>🎯</span><div><b>'+potes+' potes por dia</b><small>de segunda a sábado, a R$ 10 cada</small></div></div><div class="mrow"><span>💰</span><div><b>R$ 5,75 de lucro por pote</b><small>com custo médio de R$ 4,25</small></div></div><div class="mrow"><span>⏱</span><div><b>'+(ok?'Cabe na sua rotina':'Dá para chegar aos poucos')+'</b><small>'+(ok?'Com '+tx+' por dia você já consegue produzir essa quantidade.':'Com '+tx+' por dia você começa com cerca de '+cap_+' potes e vai aumentando.')+'</small></div></div></div>'+
+'<div class="card"><div class="mrow"><span>🎯</span><div><b>'+potes+' potes por dia</b><small>de segunda a sábado, a R$ 10 cada</small></div></div><div class="mrow"><span>💰</span><div><b>R$ 5,75 de lucro por pote</b><small>com custo médio de R$ 4,25</small></div></div><div class="mrow"><span>⏱</span><div><b>'+(ok?'Cabe na sua rotina':'Dá para chegar aos poucos')+'</b><small>'+(ok?'Com '+tx+' por dia você já consegue produzir essa quantidade.':'Com '+tx+' por dia você começa com cerca de '+cap_+' potes e vai aumentando.')+'</small></div></div><div class="mrow"><span>📈</span><div><b>E dá para ganhar ainda mais</b><small>R$ 10 é o cenário base, o mais conservador. Você pode cobrar mais: os potes premium do livro de receitas saem de R$ 12 a R$ 14.</small></div></div></div>'+
 '<p style="text-align:center;color:var(--muted);margin-bottom:1rem;font-size:.92rem">Faltam só 3 perguntas para eu montar o seu plano.</p><button class="btn" id="midgo">Continuar</button>';
 $("midgo").addEventListener("click",function(){go(3,true)})},2400)}
 function go(i,skip){cur=i;$("back").hidden=false;if(i===3&&!skip){mid();return}if(i<N){prog(i);show("q"+i)}else{prog(N);show("s-name");setTimeout(function(){$("nm").focus({preventScroll:true})},400)}}
@@ -114,6 +114,7 @@ $("s-res").innerHTML=
 '<h2 class="big serif"><em>'+n+'</em>, o seu plano de ação está pronto!</h2>'+
 '<p style="text-align:center;color:var(--muted);margin-bottom:1.1rem">Montado para quem quer <b>'+mom+'</b> com <b>'+({"1h":"1 hora","3h":"2 a 3 horas","meio":"meio período","dia":"o dia todo"}[A.tempo])+'</b> por dia.</p>'+
 '<div class="card goal"><div class="l">Para ganhar R$ '+BR(meta)+' por mês</div><div class="n">'+potes+'</div><p>potes por dia, de segunda a sábado</p><div class="kpis"><div><b>R$ '+BR(fat)+'</b><span>faturamento/mês</span></div><div><b>R$ '+BR(Math.round(potes*lucro*dias))+'</b><span>lucro/mês</span></div><div><b>~'+sem+' sem.</b><span>para chegar lá</span></div></div></div>'+
+'<div class="pick" style="background:#E4F5EC;border-left-color:var(--green)"><span class="e">📈</span><div><b>Esse é o cenário mais conservador</b><br>A conta usa o pote a R$ 10. Vendendo a <b>R$ 12</b>, os mesmos '+potes+' potes por dia rendem cerca de <b>R$ '+BR(Math.round(potes*7.75*dias))+'</b> de lucro por mês. Você pode ir bem além.</div></div>'+
 '<div class="pick"><span class="e">'+foco[0]+'</span><div><b>Seu ponto de atenção: '+foco[1]+'</b><br>'+foco[2]+'</div></div>'+
 '<div class="card"><h3>📋 Seu plano em 3 passos</h3><ol class="plan">'+
 '<li><span class="n">1</span><div><small>Semana 1 · Primeira leva</small><b>Faça '+Math.min(10,ini)+' potes com cerca de R$ 35.</b> Use a lista de compras do atacado e comece por: '+recs.slice(0,2).join(" e ")+'.</div></li>'+
