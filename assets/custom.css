@@ -57,3 +57,5 @@
 @media(min-width:768px){.mk-img{max-height:clamp(11rem,38svh,23rem)}}
 @media(max-height:700px) and (max-width:767px){.mk-img{max-height:8.5rem}}
 .of-single{grid-template-columns:1fr!important;max-width:30rem;margin-left:auto;margin-right:auto}
+/* Ícone redondo dos cards "o que você vai receber" ficava escondido atrás da foto */
+article > div > div.rounded-full:first-child{position:relative;z-index:2}
