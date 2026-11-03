@@ -1,0 +1,12 @@
+{
+  "headers": [
+    {
+      "source": "/assets/(r[0-9]-.*\\.webp|favicon\\.ico)",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }]
+    },
+    {
+      "source": "/_ext/(.*)",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }]
+    }
+  ]
+}
