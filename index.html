@@ -17,7 +17,7 @@ fbq('track', 'ViewContent', {content_name: 'Protocolo Renda Extra de Colher', co
 src="https://www.facebook.com/tr?id=243757197459978&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="assets/styles-iZSdmtJH.css" data-precedence="default"><link rel="stylesheet" href="assets/custom.css?v=21"><link rel="stylesheet" href="_ext/fonts.googleapis.com/assets/css2" data-precedence="default"><title>Protocolo Renda Extra de Colher | +50 receitas de doce no pote para vender</title><meta name="description" content="Aprenda a preparar e vender doces no pote com um treinamento prático e mais de 50 receitas para começar seu negócio de sobremesas."><meta property="og:title" content="Protocolo Renda Extra de Colher"><meta property="og:description" content="Treinamento com mais de 50 receitas para começar a vender sobremesas de colher em casa."><meta property="og:type" content="website"><meta name="twitter:card" content="summary_large_image"><link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="assets/styles-iZSdmtJH.css" data-precedence="default"><link rel="stylesheet" href="assets/custom.css?v=22"><link rel="stylesheet" href="_ext/fonts.googleapis.com/assets/css2" data-precedence="default"><title>Protocolo Renda Extra de Colher | +50 receitas de doce no pote para vender</title><meta name="description" content="Aprenda a preparar e vender doces no pote com um treinamento prático e mais de 50 receitas para começar seu negócio de sobremesas."><meta property="og:title" content="Protocolo Renda Extra de Colher"><meta property="og:description" content="Treinamento com mais de 50 receitas para começar a vender sobremesas de colher em casa."><meta property="og:type" content="website"><meta name="twitter:card" content="summary_large_image"><link rel="icon" href="assets/favicon.ico" type="image/x-icon">
 
 <meta name="twitter:title" content="Protocolo Renda Extra de Colher"><meta name="twitter:description" content="Treinamento com mais de 50 receitas para começar a vender sobremesas de colher em casa."><meta property="og:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/lovp_4zrxkfg8zd8fe9ktkjp98f98vm/05941257d4ef65d3263d71dc8bca81d5_1793140794243.png"><meta name="twitter:image" content="https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/lovp_4zrxkfg8zd8fe9ktkjp98f98vm/05941257d4ef65d3263d71dc8bca81d5_1793140794243.png"></head>
 <body>
@@ -52,8 +52,8 @@ src="https://www.facebook.com/tr?id=243757197459978&ev=PageView&noscript=1"
   // Rolagem suave para a oferta
   document.querySelectorAll('a[href="#oferta"]').forEach(function(a){
     a.addEventListener('click',function(e){
-      var t=document.getElementById('oferta');
-      if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'});}
+      var t=document.querySelector('#oferta .of-best')||document.getElementById('oferta');
+      if(t){e.preventDefault();window.scrollTo({top:t.getBoundingClientRect().top+window.pageYOffset-48,behavior:'smooth'});}
     });
   });
 })();
