@@ -88,3 +88,10 @@ article > div > div.rounded-full:first-child{position:relative;z-index:2}
 .sp.on{transform:translate(-50%,0);opacity:1}
 .sp-ic{flex:none;display:grid;place-items:center;width:1.9rem;height:1.9rem;border-radius:50%;background:#fde4e7;font-size:.95rem}
 .sp b{display:block;font-weight:800}.sp small{display:block;font-size:.68rem;opacity:.75}
+
+.of-mk{position:relative;display:flex;justify-content:center;margin:2.2rem auto 0;max-width:30rem}
+.of-mk:before{content:"";position:absolute;inset:8% 6% 0;background:radial-gradient(closest-side,rgb(217 164 65/.55),rgb(194 31 58/.22) 55%,transparent 75%);filter:blur(18px)}
+.of-mk img{position:relative;width:100%;height:auto;filter:drop-shadow(0 20px 26px rgb(0 0 0/.45));animation:ofFloat 5s ease-in-out infinite}
+@keyframes ofFloat{50%{transform:translateY(-6px)}}
+@media(prefers-reduced-motion:reduce){.of-mk img{animation:none}}
+.of-mk+.of-grid{margin-top:2.2rem}
