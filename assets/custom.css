@@ -59,3 +59,5 @@
 .of-single{grid-template-columns:1fr!important;max-width:30rem;margin-left:auto;margin-right:auto}
 /* Ícone redondo dos cards "o que você vai receber" ficava escondido atrás da foto */
 article > div > div.rounded-full:first-child{position:relative;z-index:2}
+
+.of-was{margin-top:1rem;font-size:1.05rem;font-weight:700;opacity:.8}.of-was s{color:#b3202f;text-decoration-thickness:2px}.of-was+.of-price{margin-top:.2rem}
